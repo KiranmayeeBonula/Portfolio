@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kiranmayee Bonula | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <audio id="bg-music" src="bgm.mp3" autoplay loop></audio>
+  <!-- 🌸 Music Toggle -->
+  <div class="music-toggle" id="musicToggle">🎵</div>
+  <audio id="bgMusic" loop>
+    <source src="soft-bg.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- 🌸 Navigation -->
+  <nav>
+    <div class="logo">Kiranmayee</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🌼 Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Hi, I'm</h2>
+      <h1>Kiranmayee Bonula</h1>
+
+      <div class="contact-info">
+        <p>📍 Andhra Pradesh</p>
+        <p>📞 ****7974</p>
+        <p>💌 <a href="mailto:kiranmayeebonulaa@gmail.com">kiranmayeebonulaa@gmail.com</a></p>
+        <p>🔗 
+          <a href="https://www.linkedin.com/in/kiranmayeebonula" target="_blank">LinkedIn</a> | 
+          <a href="https://github.com/KiranmayeeBonula" target="_blank">GitHub</a>
+        </p>
+      </div>
+
+      <div class="buttons">
+        <a href="#contact" class="btn primary">Hire Me</a>
+        <a href="#projects" class="btn secondary">My Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌷 About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      A creative and detail-oriented professional passionate about technology, design, and problem-solving.
+      I love building elegant, functional projects that blend logic with art — from web design to visual storytelling.
+    </p>
+  </section>
+
+  <!-- 🌼 Skills -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>HTML | CSS | JavaScript | Node.js | React.js</li>
+      <li>VS Code | Git | Figma | Canva</li>
+    </ul>
+  </section>
+
+  <!-- 💻 Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Digital Timer App</strong> — Built an interactive timer with animations and sound alerts.</li>
+      <li><strong>Weather App</strong> — Developed a responsive weather app using live APIs.</li>
+      <li><strong>Portfolio Website</strong> — Designed this aesthetic, clean, responsive personal site.</li>
+    </ul>
+  </section>
+
+
+  <!-- 📞 Contact -->
+  <section id="contact">
+    <h2>Let's Connect!</h2>
+    <p>Interested in working together or discussing creative ideas?</p>
+    <a href="mailto:kiranmayeebonulaa@gmail.com" class="btn primary">Say Hello 🌸</a>
+  </section>
+
+  <footer>© 2025 Kiranmayee Bonula | Designed with 💕 and Logic</footer>
+
+  <div class="flowers"></div>
+  <script src="script.js"></script>
+  <script>
+  const audio = document.getElementById("bg-music");
+  audio.volume = 0;
+  audio.play();
+
+  let fadeIn = setInterval(() => {
+    if (audio.volume < 0.2) {
+      audio.volume += 0.01;
+    } else {
+      clearInterval(fadeIn);
+    }
+  }, 200);
+</script>
+</body>
+</html>

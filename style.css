@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f8e1e7, #f3f5ff);
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* 🎵 Music Button */
+.music-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #b58de3;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 200;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.music-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* 🌼 Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav .logo {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #7a5ba8;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #b56da4;
+}
+
+/* 🌸 Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 10%;
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #6b4e8b;
+}
+
+.hero h3 {
+  color: #b57295;
+  font-weight: 400;
+}
+
+.contact-info p, .contact-info a {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 5px 0;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #7a5ba8;
+}
+
+.contact-info a:hover {
+  color: #b56da4;
+}
+
+/* 🌷 Buttons */
+.btn {
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+  margin: 10px;
+  display: inline-block;
+}
+
+.btn.primary {
+  background-color: #b58de3;
+  color: white;
+}
+
+.btn.secondary {
+  border: 2px solid #b58de3;
+  color: #b58de3;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* 🌸 Section Layout */
+section {
+  text-align: center;
+  margin: 70px auto;
+  width: 85%;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 50px 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  color: #7a5ba8;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+/* 🌺 Floating Flowers */
+.flowers::before, .flowers::after {
+  content: '🌸';
+  position: absolute;
+  font-size: 2rem;
+  animation: float 10s infinite linear;
+  opacity: 0.7;
+}
+
+.flowers::after {
+  content: '🌷';
+  animation-duration: 12s;
+  left: 50%;
+}
+
+@keyframes float {
+  0% { transform: translateY(100vh) rotate(0deg); opacity: 0.9; }
+  100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+}
+
+/* 🌸 Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f9f2ff;
+  color: #777;
+  margin-top: 40px;
+  border-top: 1px solid #e3d4ff;
+}
